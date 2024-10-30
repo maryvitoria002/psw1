@@ -1,5 +1,14 @@
+body{
+    background-color: papayawhip;
+}
+
 p {
 background-color: yellow;
+}
+
+h1{
+    color: rgb(167, 32, 82);
+    text-align: center;
 }
 
 #p1 {
@@ -27,4 +36,40 @@ div {
     padding-top: 40px;
     padding-left: 50px;
     margin-top: 40px;
+}
+
+table{
+    width: 90%;
+
+}
+
+th {
+    height: 50px;
+    text-align: center;
+    background-color: pink;
+  }
+
+table,th,td {
+    border: 1px solid;
+    margin-top: 40px;
+    margin-left: 50px;
+}
+
+td{
+    background-color: aliceblue;
+    text-align: center;
+}
+a:link, a:visited{
+    margin-top: 30px;
+    margin-left: 40px;
+    background-color: #f44336;
+  color: white;
+  padding: 14px 25px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+
+}
+a:hover{
+    background-color: palevioletred;
 }
