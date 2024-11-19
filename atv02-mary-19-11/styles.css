@@ -1,0 +1,175 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+#logo{
+    width: 20px;
+    height: 20px;
+}
+
+.titulo {
+    height: 120px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+
+#div1 {
+    background-color: rgb(99, 7, 22);
+    width: 20%;
+    height: 100%;
+}
+
+#div2 {
+    background-color:rgb(99, 7, 22);
+    width: 60%;
+    height: 100%;
+}
+
+#botoestp {
+    display: flex;
+    gap: 15px; 
+   
+    left: 50px;
+}
+
+#div3 {
+    background-color: rgb(99, 7, 22);
+    width: 20%;
+    height: 100%;
+}
+
+input[type=text], select {
+    width: 90%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+  
+  input[type=submit] {
+    width: 70%;
+    background-color: #dd99a1;
+    color: white;
+   padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  input[type=submit]:hover {
+    background-color: #965158;
+  }
+
+.centro {
+    height: 650px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+}
+
+
+h2{
+    padding: 7px;
+}
+
+p{
+    padding: 2px;
+    
+}
+
+.centro{
+    background-color: rgb(255, 206, 190);
+
+}
+
+#centro1 {
+    width: 50%;
+    height: 650px;
+    margin: 20px;
+}
+
+#centro2 {
+    width: 50%;
+    height: 650px;
+    background-color: rgb(255, 206, 190);
+}
+
+.rodape {
+    background-color: rgb(99, 7, 22);
+    height: 65px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+#rodape1 {
+    width: 25%;
+    height: 65px;
+    background-color: rgb(99, 7, 22);
+    position: absolute;
+}
+
+#rodape2 {
+    width: 25%;
+    height: 65px;
+    background-color: rgb(99, 7, 22);
+    position: absolute;
+}
+
+#rodape3 {
+    width: 25%;
+    height: 65px;
+    background-color: rgb(99, 7, 22);
+    position: absolute;
+}
+
+#rodape4 {
+    width: 25%;
+    height: 65px;
+    background-color: rgb(99, 7, 22);
+    position: absolute;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    overflow: hidden;   
+    list-style-type: none;
+}
+
+li {
+    float: left;
+    border-right: 1px solid white;
+    border-left: 1px solid white;
+
+}
+
+li a{
+    color: white;
+    display: block;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    
+}
+
+a:hover {
+    background-color: rgb(89, 5, 19);
+}
+
+
+  
+ 
+   
+  
