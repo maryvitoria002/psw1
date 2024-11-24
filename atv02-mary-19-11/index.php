@@ -3,61 +3,117 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/9c2b5a2876.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="styles.css">
     <title>Aula 19 do 11</title>
 </head>
 
 <body>
+    <header>
+        <div id="logo">
+            <h1>MUSHY</h1>
+        </div>
 
-    <div class="titulo">
-        <div id="div1">div1</div>
-        <div id="div2">div2</div>
-        <div id="div3">div3</div>
-    </div>
+        <div id="nav">
 
-    <nav>
-        <ul>
-            <li> <a href="">Home</a> </li>
-            <li><a href="">News</a></li>
-            <li><a href="">Contact</a></li>
-            <li><a href="">About</a></li>
-           
-        </ul>
-    </nav>
+            <ul>
+                
+                <li><a href="">Home</a> </li>
+                <li><a href="">News</a></li>
+                <li><a href="">Contact</a></li>
+                <li><a href="">About</a></li>
+            
+            </ul>
+
+        </div>
+
+        <div id="perfil">
+            <div id="nomeperfil">
+                <h1>Profile</h1>
+                <i class="fa-solid fa-user"></i>
+            </div>
+        </div>
+
+    </header>
 
     <form>
         <div class="centro">
-            <div id="centro1">
 
+            <div id="centro1">
+                <img src="img/florzinha-dois.jpg" alt="">
+            </div>
+           
+            <div id="centro2">  
                 <h2>Faça seu cadastro</h2><br>
 
-                    <div id="botoestp">
-                        <p>Tipo de pessoa:</p>
+                <div id="botoestp">
+                    <label style="color: purple;">Tipo de pessoa:</label>
+                    <div>
                         <input type="radio" id="fisica" name="tipo_pessoa" value="FISICA">
-                        <label for="fisica">Física</label><br>
+                        <label for="fisica">Física</label>
+                    </div>
+                    <div>
                         <input type="radio" id="juridica" name="tipo_pessoa" value="JURIDICA">
-                        <label for="juridica">Jurídica</label><br>
+                        <label for="juridica">Jurídica</label>
+                    </div>
+                    <div>
                         <input type="radio" id="estrangeiro" name="tipo_pessoa" value="ESTRANGEIRO">
-                        <label for="estrangeiro">Estrangeiro</label><br><br>
+                        <label for="estrangeiro">Estrangeiro</label>
+                    </div>
+                </div><br>
+
+                <div id="linhaform">
+                    <div class="nomediv">
+                        <label for="nome">Nome:</label>
+                        <input type="text" id="nome" name="nome" placeholder="Ex: Mary" required>
                     </div>
 
-                    <label for="nome">Nome:</label><br>
-                    <input type="text" id="nome" name="nome" placeholder="Ex: Mary"><br><br>
+                    <div class="nomediv">
+                        <label for="sobrenome">Sobrenome:</label>
+                        <input type="text" id="sobrenome" name="sobrenome" placeholder="Ex: Batista" required>
+                    </div>
+                </div><br>
 
+                <div id="linhaform">
+                    <div class="nomediv">
+                        <label for="email">E-mail:</label>
+                        <input type="email" id="" name="email" placeholder="Ex: mary@seuemail.com" required>
+                    </div>
                     
-                    <label for="email">E-mail:</label>
-                    <input type="email" id="" name="email" placeholder="Ex: mary@seuemail.com" >
+                    <div class="nomediv">
+                        <label for="">Senha:</label>
+                        <input type="password" id="senha" name="senha" placeholder="Senha" required><br><br>
+                    </div>
+                </div>
+                
+                <label for="">Número do CPF:</label>
+                <input type="text" id="" name="" placeholder="Digite apenas números" maxlength="11" required><br><br>
+   
+                <div id="linhaform">
+                    <div class="nomediv2">
+                        <label for="sexo">Sexo:</label><br>
+                        <select id="sexo" name="sexo">
+                            <option value="selecione" selected>Selecione...</option>
+                            <option value="feminino">Feminino</option>
+                            <option value="masculino">Masculino</option>
+                            <option value="prefironaodizer">Prefiro não dizer</option>
+                        </select>
+                    </div>
+                    <div class="nomediv2">
+                        <label for="">Telefone</label>
+                        <input type="tel" id="" name="" placeholder="(XX) XXXXX-XXXX"  maxlength="11" required>
+                    </div>
+                    <div class="nomediv2">
+                        <label for="data">Data de nascimento:</label>
+                        <input type="date" id="data" name="data" required>
+                    </div>
+                </div>
 
-                    <label for="">Senha:</label>
-                    <input type="password" id="senha" name="senha" placeholder="Senha"><br><br>
+                <h2>Meu endereço</h2>
 
-                    <label for="">Número do CPF:</label>
-                    <input type="text" id="" name="" placeholder="Digite apenas números" maxlength="11" ><br>
-
-
-                    <h2>Meu endereço</h2>
-
-                    <label for="pais">País:</label><br>
+                <div id="linhaform">
+                    <div class="nomediv">
+                        <label for="pais">País:</label><br>
                         <select id="pais" name="pais">
                             <option value="">Afeganistão</option>
                             <option value="">África do Sul</option>
@@ -255,87 +311,65 @@
                             <option value="">Zâmbia</option>
                             <option value="">Zimbábue</option>
                         </select><br>
-                                
-                    <label for="endereco">Endereço:</label><br>
-                    <input type="text" id="endereco" name="endereco"><br>
-
-                    <label for="">Bairro</label><br>
-                    <input type="text" id="" name="" value="" ><br>
-                    
-                    <label for="">Ponto de referência</label><br>
-                    <input type="text" id="" name="" value="" ><br><br>
-
-                    
-
-                                    
-            </div>
-            <div id="centro2">
-
-                <br><br><br><label for="sobrenome">Sobrenome:</label><br>
-                <input type="text" id="sobrenome" name="sobrenome" placeholder="Ex: Batista"><br>
-
-                <label for="sexo">Sexo:</label><br>
-                        <select id="sexo" name="sexo">
-                            <option value="selecione" selected>Selecione...</option>
-                            <option value="feminino">Feminino</option>
-                            <option value="masculino">Masculino</option>
-                            <option value="prefironaodizer">Prefiro não dizer</option>
-                        </select><BR><BR>
-                
-                <label for="">Telefone</label>
-                <input type="tel" id="" name="" placeholder="(XX) XXXXX-XXXX"  pattern="[0-9]{2}-[0-9]{5}-[0-9]{4}" required>
-                <label for="">Data de nascimento:</label>
-                    <input type="date" id="" name="" value="" ><br><br><br><br><br><br>
-
-
-
-                <label for="estado">Estado:</label><br>
+                    </div>
+                    <div class="nomediv">
+                        <label for="estado">Estado:</label><br>
                         <select id="estado" name="estado">
-                        <option value="">AC</option>
-                        <option value="">AL</option>
-                        <option value="">AP</option>
-                        <option value="">AM</option>
-                        <option value="">BA</option>
-                        <option value="">CE</option>
-                        <option value="">DF</option>
-                        <option value="">ES</option>
-                        <option value="">GO</option>
-                        <option value="">MA</option>
-                        <option value="">MT</option>
-                        <option value="">MS</option>
-                        <option value="">MG</option>
-                        <option value="">PA</option>
-                        <option value="">PB</option>
-                        <option value="">PR</option>
-                        <option value="">PE</option>
-                        <option value="">PI</option>
-                        <option value="">RJ</option>
-                        <option value="">RN</option>
-                        <option value="">RS</option>
-                        <option value="">RO</option>
-                        <option value="">RR</option>
-                        <option value="">SC</option>
-                        <option value="">SP</option>
-                        <option value="">SE</option>
-                        <option value="">TO</option>
-                        </select><br><br>
+                            <option value="">AC</option>
+                            <option value="">AL</option>
+                            <option value="">AP</option>
+                            <option value="">AM</option>
+                            <option value="">BA</option>
+                            <option value="">CE</option>
+                            <option value="">DF</option>
+                            <option value="">ES</option>
+                            <option value="">GO</option>
+                            <option value="">MA</option>
+                            <option value="">MT</option>
+                            <option value="">MS</option>
+                            <option value="">MG</option>
+                            <option value="">PA</option>
+                            <option value="">PB</option>
+                            <option value="">PR</option>
+                            <option value="">PE</option>
+                            <option value="">PI</option>
+                            <option value="">RJ</option>
+                            <option value="">RN</option>
+                            <option value="">RS</option>
+                            <option value="">RO</option>
+                            <option value="">RR</option>
+                            <option value="">SC</option>
+                            <option value="">SP</option>
+                            <option value="">SE</option>
+                            <option value="">TO</option>
+                        </select><br>
+                    </div>
+                </div>
+                            
+                <label for="endereco">Endereço:</label><br>
+                <input type="text" id="endereco" name="endereco" required><br>
 
-                        <input type="checkbox" id="notificacao" name="notificacao" value="notificacao">
-                        <label for="notificacao"> Desejo receber e-mails de novidades sobre Mary</label><br><br>
-                        <input type="submit" value="Finalizar cadastro">
+                <label for="">Bairro</label><br>
+                <input type="text" id="" name="" value="" required><br>
+
+                <label for="">Ponto de referência</label><br>
+                <input type="text" id="" name="" value="" required><br>
+
+                <input type="checkbox" id="notificacao" name="notificacao" value="notificacao">
+                <label for="notificacao"> Desejo receber e-mails de novidades sobre Mary</label><br><br>
+                <div class="sub">
+                    <input type="submit" value="Finalizar cadastro">
+                </div>
             </div>
         </div>
     </form>
 
-
     <div class="rodape">
-        <div id="rodape1">rodape1</div>
-        <div id="rodape2">rodape2</div>
-        <div id="rodape3">rodape3</div>
-        <div id="rodape4">rodape4</div>
+        <div id="rodape1"></div>
+        <div id="rodape2"></div>
+        <div id="rodape3"></div>
+        <div id="rodape4"></div>
     </div>
-
-
 </body>
 
 </html>
